@@ -1,0 +1,21 @@
+from setuptools import find_packages, setup
+
+
+# Required dependencies
+required = [
+    # Please keep alphabetized
+    'gym>=0.15.4',
+    'mujoco-py<2.2,>=2.1',
+    'numpy>=1.18',
+    'tensorboard',
+    'GPUtil',
+    'torch>=1.7'
+]
+
+
+setup(
+    name='learning_to_be_taught',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=required,
+)
